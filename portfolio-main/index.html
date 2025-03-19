@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>Portfolio | AVUGLA</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/templatemo_style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+	<!-- 
+        Composite Template 
+        http://www.templatemo.com/preview/templatemo_444_composite
+        -->
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar-collapse">
+
+	<!-- la barre de navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+				<a href="#home" class="navbar-brand">Portfolio</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home" class="smoothScroll">ACCEUIL</a></li>
+					<li><a href="#features" class="smoothScroll">COMPETENCES</a></li>
+					<li><a href="#about" class="smoothScroll">A PROPOS</a></li>
+					<li><a href="#team" class="smoothScroll">PRESENTATIONS DES LANGAGES</a></li>
+					<li><a href="#portfolio" class="smoothScroll">PORTFOLIO</a></li>
+					<li><a href="#contact" class="smoothScroll">CONTACTS</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- fin navigation -->
+
+	<!--Acceuil-->
+	<section id="home" class="text-center">
+		<div class="templatemo_headerimage">
+			<div id="carousel" class="flexslider">
+				<div id="carousel-1">
+					<!--<button id="prev">Précédent</button>
+					<button id="next">Suivant</button>-->
+
+					<ul class="slides">
+						<li>
+							<img src="images/slider/1.jpg" style="height: 950px; width: 105em" alt="Slide 1">
+							<div class="slider-caption">
+								<div id="carousel-1" class="templatemo_homewrapper">
+									<h1 style="color: black;">Je suis </h1>
+									<h2 style="color: black;"> <span>Hotsi Friday Adonis Esaïe AVUGLA</span></h2>
+									<a href="Adonis AVUGLA CV.pdf"
+										class="smoothScroll templatemo-slider-btn btn btn-default">Curriculum Vitae</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="images/p1.jpg" style="height: 950px; width: 105em" alt="Slide 2">
+							<div class="slider-caption">
+								<div id="carousel-1" class="templatemo_homewrapper">
+									<h1>je suis un developpeur et designeur</h1>
+									<h2>Étudiant en Licence 2 Informatique, spécialisé en Développement Web et Mobile et Réseautage
+									</h2>
+									<a href="#portfolio" class="smoothScroll templatemo-slider-btn btn btn-default">Lire
+										plus</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="images/p6.jpg" style="height: 950px; width: 105em" alt="Slide 3">
+							<div class="slider-caption">
+								<div id="carousel-1" class="templatemo_homewrapper">
+									<h1>Les langages et framework maitriser</h1>
+									<h2>PHP, Symfony, Laravel, Java, Python, Django, Html, CSS, JavaScript, bootstrap, jquery, Base de donnée, maintenance Informatique, Réseautage</h2>
+									<a href="#about" class="smoothScroll templatemo-slider-btn btn btn-default">A propos de moi</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+	<!--fin acceuil-->
+
+	<!-- pour mettre les caroussels
+		<script>
+			const carouselContainer = document.querySelector("#carousel");
+		const slides = document.querySelectorAll('#carousel-1');
+		const next = document.querySelector('#next');
+		const prev = document.querySelector('#prev');
+		let counter = 1;
+		const size = slides.clientWidth;
+
+		carouselContainer.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+		next.addEventListener('click', () => {
+		if (counter >= slides.length) return;
+		carouselContainer.style.transition = 'transform 0.4s ease-in-out';
+		counter++;
+		carouselContainer.style.transform = 'translateX(' + (-size * counter) + 'px)';
+		});
+
+		prev.addEventListener('click', () => {
+		if (counter <= 0) return;
+		carouselContainer.style.transition = 'transform 0.4s ease-in-out';
+		counter--;
+		carouselContainer.style.transform = 'translateX(' + (-size * counter) + 'px)';
+		});
+
+		carouselContainer.addEventListener('transitionend', () => {
+		if (slides[counter].id === 'lastslide') {
+			carouselContainer.style.transition = 'none';
+			counter = slides.length - 2;
+			carouselContainer.style.transform = 'translateX(' + (-size * counter) + 'px)';
+		}
+		});
+
+		carouselContainer.addEventListener('transitionend', () => {
+		if (slides[counter].id === 'firstslide') {
+			carouselContainer.style.transition = 'none';
+			counter = slides.length - counter;
+			carouselContainer.style.transform = 'translateX(' + (-size * counter) + 'px)';
+		}
+		});
+		</script>
+-->
+
+	<!-- <script>
+		$(function() {
+		
+		  // This will select everything with the class smoothScroll
+		
+		  // This should prevent problems with carousel, scrollspy, etc...
+		
+		  $('.smoothScroll').click(function() {
+		
+			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+		
+			  var target = $(this.hash);
+		
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		
+			  if (target.length) {
+		
+				$('html,body').animate({
+		
+				  scrollTop: target.offset().top
+		
+				}, 1000); // The number here represents the speed of the scroll in milliseconds
+		
+				return false;
+		
+			  }
+		
+			}
+		
+		  });
+		
+		});
+		
+		// Change the speed to whatever you want
+		
+		// Personally i think 1000 is too much
+		
+		// Try 800 or below, it seems not too much but it will make a difference
+		</script> -->
+
+	<!--  Mes compétances -->
+	<section id="features" class="features text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<h2>Compétences | Expériences</h2>
+					<p>A l'âge de 23 ans, j'ai acquis une expertise solide dans les <span class="blue"></span>langages
+						de programmation </span>
+						tels que <span class="green">HTML, CSS, JavaScript, PHP, Java, et d'autres </span>. En tant que
+						développeur je maîtrise
+						des frameworks comme Bootstrap, Django, Laravel et bien d'autre pour créer rapidement des interfaces réactives et
+						esthétiques, et jQuery pour améliorer l'interactivité des sites web.</p>
+				</div>
+				<div class="col-md-12"></div>
+				<div class="col-sm-6 col-md-3">
+					<a href="https://symfony.com;"><i class="fa fa-laptop"></i></a>
+					<h3>Dévéloppement et design</h3>
+					<p>Mon expérience inclut le développement back-end avec Laravel, un framework PHP
+						élégant et puissant, et également photoshpe et d'autres logiciels</p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"><i
+							class="fa fa-cog"></i></a>
+					<h3>Bootstrap 5</h3>
+					<p>
+						Un framework que j'utilise beaucoup pour enjoliver mes projets
+					</p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="https://fonts.google.com/"><i class="fa fa-font"></i></a>
+					<h3>Google Web Fonts</h3>
+					<p>
+						L'une des bliothèques de modèles font que j'utilise pour varier l'écriture sur mes projects
+					</p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="https://meet.google.com/?hs=197&authuser=0"><i class="fa fa-user"></i></a>
+					<h3>Collaboration</h3>
+					<p>J'ai en un esprit d'équipe. Je me fais connaître mieux en aidant l'autre à être au pas.
+						Travaillez sous pression ne m'est pas étrangère.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- fin competances-->
+
+	<!--  Mes expériences -->
+	<section id="features" class="features text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<h4>Expériences</h4>
+					<h2>Collaborateur et chef département en développement web et Mobile</h2>
+					<p>Chez <span>INFORMATIQUE SOLUTION</span>	</p> <br>
+					<iframe src="INFORMATIC SOLUTION_Décret No 2012.pdf"
+			style="height: 19vw; width :30vw; margin-right: 10px"></iframe>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- a propos de moi  -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 text-center">
+					<h2>A propos de moi</h2>
+					<p>En tant que passionné de développement, je suis toujours ouvert à explorer de
+						nouvelles technologies. Ma collaboration étroite avec les équipes de développement
+						et de design atteste de mon engagement envers l'esprit d'équipe.Je suis certifier Netacad,
+						Fortinet, Python, Java. Fort de mon
+						expertise technique, je suis prêt à contribuer de manière significative à des projets
+						ambitieux, grâce à ma rigueur, ma capacité à travailler en équipe, et ma volonté
+						d'apprendre en continu.</p>
+				</div>
+				<div class="col-md-12"></div>
+				<div class="col-sm-6 col-md-6 info">
+					<h3>Langages</h3>
+					<h4>WEB DESIGN &AMP; DEVELOPMENT WEB ET MOBILE</h4>
+					<p>Et plein d'autres Langages...</p>
+				</div>
+				<div class="col-sm-6 col-md-6 skills">
+					<span>HTML5</span>
+					<span class="pull-right">100%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+							aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+					</div>
+
+					<span>CSS3</span>
+					<span class="pull-right">100%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+							aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+					</div>
+
+					<span>Résautage</span>
+					<span class="pull-right">100%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+							aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+					</div>
+
+					<span>Mysql</span>
+					<span class="pull-right">90%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+							aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+					</div>
+
+					<span>PHOTOSHOP</span>
+					<span class="pull-right">80%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+							aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+					</div>
+
+					<span>JavaScript</span>
+					<span class="pull-right">80%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+							aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+					</div>
+
+					<span>Jquery</span>
+					<span class="pull-right">80%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+							aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+					</div>
+
+					<span>Base de donnée</span>
+					<span class="pull-right">80%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+							aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+					</div>
+
+					<span>Laravel, Symfony, Django</span>
+					<span class="pull-right">80%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+							aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+					</div>
+
+
+					<span>PHP</span>
+					<span class="pull-right">80%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+							aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+					</div>
+
+					<span>JAVA</span>
+					<span class="pull-right">70%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+							aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+					</div>
+
+					<span>Cybersécurité</span>
+					<span class="pull-right">70%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+							aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+					</div>
+
+					
+				</div>
+			</div>
+
+
+			<div class="col-md-8">
+				<h2 style="display: center;">Mes certifications</h2>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- les certifications Cisco et fortinet -->
+
+	<div style="margin-left: 30px; display:flex">
+		<iframe src="./certifications/AVUGLAHotsi Friday Ado-Cloud Security-certificate.pdf"
+			style="height: 19vw; width :30vw; margin-right: 10px"></iframe> <br> <br>
+
+		<iframe src="./certifications/AVUGLAHotsi Friday Ado-Introduction to -certificate (1).pdf"
+			style="height: 19vw; width :30vw; margin-right:10px"></iframe><br><br>
+
+		<iframe src="./certifications/AVUGLAHotsi Friday Ado-JavaScript Essen-certificate.pdf"
+			style="height: 19vw; width :30vw; margin-right: 10px"></iframe> <br> <br>
+		<iframe src="./certifications/AVUGLAHotsi Friday Ado-NDG Linux Unhatc-certificate (1).pdf"
+			style="height: 19vw; width :30vw; margin-right: 10px"></iframe>
+
+	</div><br>
+
+	<div style="margin-left: 30px; display:flex">
+		<iframe src="./certifications/AVUGLAHotsi Friday Ado-NETWORKING ESSEN-certificate.pdf"
+			style="height: 19vw; width :30vw; margin-right: 10px"></iframe> <br> <br>
+		<iframe src="./certifications/AVUGLAHotsi Friday Ado-PROGRAMME PYTHON-certificate.pdf"
+			style="height: 19vw; width :30vw; margin-right:10px"></iframe><br><br>
+
+		<iframe src="./certifications/Course_Completion_Certificate 1.pdf"
+			style="height: 19vw; width :30vw; margin-right: 10px"></iframe> <br> <br>
+		<iframe src="./certifications/Course_Completion_Certificate 2.pdf"
+			style="height: 19vw; width :30vw; margin-right: 10px"></iframe>
+	</div><br>
+
+	<div style="margin-left: 30px; display:flex">
+		<iframe src="./certifications/Course_Completion_Certificate 3.pdf"
+			style="height: 19vw; width :30vw; margin-right: 10px"></iframe> <br> <br>
+	</div>
+
+	<p></p>
+
+
+	<!-- fin a propos de moi  -->
+
+	<!-- prensatation des langages  -->
+	<section id="team" class="text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<h2>PRESENTATIONS DES LANGAGES ET LOGICIELS</h2>
+				</div>
+				<div class="col-md-12"></div>
+				<div class="col-sm-6 col-md-3">
+					<img src="images/member1.jpg" class="img-responsive" alt="team 1">
+					<h3><a href="cours2-css.pdf">CSS</a></h3>
+					<p>Feuilles de style en cascade</p>
+
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<img src="images/member2.jpg" class="img-responsive" alt="team 2">
+					<h3><a href="livre_photoshop.pdf">PHOTOSHOP</a></h3>
+					<p>Design</p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<img src="images/member3.jpg" class="img-responsive" alt="team 3">
+					<h3><a href="Langage-HTML.pdf">HTML</a></h3>
+					<p>Créateur de contenu de la page</p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<img src="images/member4.jpg" class="img-responsive" alt="team 4">
+					<h3><a href="JavaLesBases.pdf">JAVA </a></h3>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- fin -->
+
+	<!-- portfolio-->
+	<section id="portfolio">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<h2>PORTFOLIO</h2>
+					<p>AVUGLA Hotsi Friday Adonis Esaïe</p>
+				</div>
+				<div class="col-md-12"></div>
+				<div class="col-sm-6 col-md-3">
+					<div class="image_thumb">
+						<img src="images/profile.jpg" class="img-responsive" alt="work">
+						<div class="image_overlay">
+							<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="image_thumb">
+						<p style="text-align:justify"> Étudiant en Licence 2 Informatique, spécialisé en Développement
+							Web et Mobile et j'ai acquis
+							plusieurs certifications
+							dans ce domaines. Mon parcours met en évidence mon engagement à me former et acquérir des
+							compétences pratiques dans le développementdes sites et applications mobiles.
+							En obtenant ces certifications, je demontre une certaine maîtrise des langages de
+							programmation pertinante tels que: HTML, CSS, JS, ainsi que des frameworks populaire tels
+							que Symfony,Django,Laravel. J'ai également une notion en conception d'interfaces
+							utilisateur, de
+							développement backend et de gestion des bases de donnée, ce qui me permet de créer des
+							applications
+							web et mobiles complètes et fonctionnelles. Je fais également du Résautage et la maintenance
+							Informatique.
+						</p>
+						<div class="image_overlay">
+							<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="image_thumb">
+						<p style="text-align: justify;"> En tant qu'étudiant en Licence 2, je suis en train
+							d'approfondir mes connaissances et
+							d'explorer des sujets plus avancés tels que le développement d'applications
+							les technologies de du cloud et les bonne pratiques en matière de sécurité dans le
+							développement des applicationset sites.Je suis enthousiaste à l'idée de mettre mes
+							compétences à votre service et de
+							contribuer au succès de votre équipe. Je parle Français, Anglais, Latin, Allemand et l'éwé.
+							Merci de considérer ma candidature, convaincu
+							que mon profil répond aux exigences de manière optimale.
+						</p>
+						<div class="image_overlay">
+							<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="image_thumb">
+						<img src="images/p4.jpg" style="height: 390px;" class="img-responsive" alt="work">
+						<div class="image_overlay">
+							<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	</section>
+	<!--fin -->
+
+	<!-- contact -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 text-center">
+					<h2>CONTACTS</h2>
+					<p>Votre satisfaction</p>
+				</div>
+				<div class="col-md-12"></div>
+				<div class="col-sm-6 col-md-4 address">
+
+					<p><i class="fa fa-phone"></i> +228 93 47 95 00 / 97 42 34 09 </p>
+					<p><i class="fa fa-envelope-o"></i> <a href="hotsifriday@gmail.com">hotsifriday@gmail.com</a></p>
+					<p><i class="fa fa-globe"></i> <a href="http://www.adonisjc.online">http://www.adonisjc.online</a>
+					</p>
+					<p><i class="fa fa-map-marker"></i>Baguida/Adidogomé,Lomé-Togo</p>
+				</div>
+				<div class="col-sm-6 col-md-8">
+					<form action="traitement.php" method="post" role="form">
+						<div class="col-md-6">
+							<input type="text" class="form-control" name="nom" placeholder="Nom">
+						</div>
+						<div class="col-md-6">
+							<input type="email" class="form-control" name="email" placeholder="Email">
+						</div>
+						<div class="col-md-12">
+							<input type="text" class="form-control" name="sujet" placeholder="Sujet">
+						</div>
+						<div class="col-md-12">
+							<textarea class="form-control" name="message" rows="6" placeholder="Message"></textarea>
+						</div>
+						<div class="col-md-12">
+							<input type="submit" value="Soumission" class="form-control">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- fin -->
+
+	<!-- footer -->
+	<footer class="text-center">
+		<div class="container">
+			<div class="row">
+				<div class="social_icon">
+					<a href="https://www.facebook.com/profile.php?id=61556130235102" class="fa fa-facebook"></a>
+					<a href="https://x.com/Ado_nis07?t=FQejiHU6h0ogUGJjwFeI7A&s=09" class="fa fa-twitter"></a>
+					<a href="https://www.linkedin.com/in/adonis-avugla-b8b03627b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+						class="fa fa-linkedin"></a>
+					<a href="https://www.tumblr.com/dashboard" class="fa fa-tumblr"></a>
+				</div>
+				<p>Copyright © 2024 Adonis AVUGLA</p>
+			</div>
+		</div>
+	</footer>
+	<!-- fin-->
+
+	<!-- renvoie -->
+	<a href="#top" class="go-top"><i class="fa fa-chevron-up fa-1x"></i></a>
+	<!-- fin-->
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+
+	<!-- javaScript -->
+	<script>
+		$(document).ready(function () {
+			// curseur 
+			$('.flexslider').flexslider({
+				animation: "fade",
+				directionNav: false
+			});
+
+			// boutton
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			// animation
+			$('.go-top').click(function (event) {
+				event.preventDefault();
+				$('html, body').animate({ scrollTop: 0 }, 300);
+			})
+		});
+	</script>
+	<!-- fin JS -->
+
+</body>
+
+</html>
